@@ -1,9 +1,8 @@
-package com.test.abstatClass;
+package com.test;
 
-public class SavingAccount extends Account{
+public class SavingAccount{
 
-	@Override
-	public void calculateInterest() {
+	public void Test() {
 		System.out.println("Calculate Saving account Interest with 6%");
 	}
 
