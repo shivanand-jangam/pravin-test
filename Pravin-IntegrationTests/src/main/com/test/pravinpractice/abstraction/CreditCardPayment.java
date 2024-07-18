@@ -1,4 +1,4 @@
-package abstraction;
+package com.test.pravinpractice.abstraction;
 
 public class CreditCardPayment extends Payment 
 {

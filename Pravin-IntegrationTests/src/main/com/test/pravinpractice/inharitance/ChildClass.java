@@ -1,4 +1,4 @@
-package inharitance;
+package com.test.pravinpractice.inharitance;
 
 public class ChildClass {
 	
