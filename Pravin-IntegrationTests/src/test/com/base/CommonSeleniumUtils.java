@@ -1,11 +1,15 @@
 package com.base;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -66,4 +70,17 @@ public class CommonSeleniumUtils {
 		executor.executeScript("arguments[0].click();", impressiveRadioButton);
 	}
 
+	public void setImplicitWait(int sec) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(sec));
+	}
+
+	public WebElement explicitWaitElementToBeClickable(By location,
+			int timeout) {
+		WebDriverWait wait = new WebDriverWait(driver,
+				Duration.ofSeconds(timeout));
+
+		WebElement element = wait
+				.until(ExpectedConditions.elementToBeClickable(location));
+		return element;
+	}
 }
