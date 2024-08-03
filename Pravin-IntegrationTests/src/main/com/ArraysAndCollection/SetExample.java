@@ -1,4 +1,4 @@
-package com.test.ArraysAndCollection;
+package com.ArraysAndCollection;
 
 import java.util.HashSet;
 import java.util.Iterator;

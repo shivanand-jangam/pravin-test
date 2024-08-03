@@ -1,4 +1,4 @@
-package com.test.ArraysAndCollection;
+package com.ArraysAndCollection;
 
 import java.util.Hashtable;
 import java.util.Set;
