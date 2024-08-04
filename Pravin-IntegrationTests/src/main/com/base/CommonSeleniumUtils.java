@@ -30,8 +30,8 @@ public class CommonSeleniumUtils {
 		driver = new ChromeDriver(options);
 	}
 
-	public void navigateTotheUrl() {
-		driver.get("https://demoqa.com/");
+	public void navigateTotheUrl(String url) {
+		driver.get(url);
 		waitForElement(3);
 	}
 

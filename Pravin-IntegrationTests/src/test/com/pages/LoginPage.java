@@ -29,6 +29,22 @@ public class LoginPage extends CommonSeleniumUtils {
 	@FindBy(id = "login")
 	private WebElement loginButton;
 
+	public void openApplication(String url) {
+		navigateTotheUrl(url);
+	}
+
+	public void enterUsername(String username) {
+		userNameInputField.sendKeys(username);
+	}
+
+	public void enterPassword(String password) {
+		passwordInputField.sendKeys(password);
+	}
+
+	public void clickOnLoginButton() {
+		loginButton.click();
+	}
+
 	public void loginIntoTheApplication() {
 		userNameInputField.sendKeys("");
 		passwordInputField.sendKeys("");
