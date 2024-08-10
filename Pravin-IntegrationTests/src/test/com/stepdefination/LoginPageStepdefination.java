@@ -12,7 +12,7 @@ public class LoginPageStepdefination {
 
 	@Given("I am on the login page")
 	public void i_am_on_the_login_page() {
-		loginPage.openApplication("https://demoqa.com/");
+//		loginPage.openApplication("https://demoqa.com/");
 	}
 
 	@When("I enter a valid username as {string}")

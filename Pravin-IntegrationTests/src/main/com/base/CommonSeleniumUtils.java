@@ -4,40 +4,11 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-public class CommonSeleniumUtils {
-
-	public WebDriver driver;
-
-	public void openBrowser() {
-		// Set up WebDriverManager to handle the ChromeDriver setup
-		WebDriverManager.chromedriver().setup();
-
-		// Set up Chrome options
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--start-maximized");
-		options.addArguments("--incognito");
-
-		// Initialize WebDriver
-		driver = new ChromeDriver(options);
-	}
-
-	public void navigateTotheUrl(String url) {
-		driver.get(url);
-		waitForElement(3);
-	}
-
-	public void closeBrowser() {
-		driver.quit();
-	}
+public class CommonSeleniumUtils extends BrowserFactory {
 
 	public static void waitForElement(int sec) {
 		try {

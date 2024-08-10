@@ -2,10 +2,15 @@ package com.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.base.CommonSeleniumUtils;
 
 public class LoginPage extends CommonSeleniumUtils {
+
+	public LoginPage() {
+		PageFactory.initElements(driver, this);
+	}
 
 	// private String usernameInputField = "userName"; // String locator
 	//

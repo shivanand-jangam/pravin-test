@@ -13,7 +13,7 @@ public class RadioButtonExample extends CommonSeleniumUtils {
 	public void example() {
 		try {
 			openBrowser();
-			navigateTotheUrl();
+			navigateTotheUrl("https://demoqa.com/");
 
 			WebElement Elements = driver
 					.findElement(By.xpath("//h5[(text()='Elements')]"));
