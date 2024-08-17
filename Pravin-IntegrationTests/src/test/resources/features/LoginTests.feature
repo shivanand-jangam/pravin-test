@@ -1,7 +1,7 @@
 @Regression @LoginModuleTest
 Feature: Login Example
 
-@SmokeTest
+@SmokeTest111
   Scenario: Unsuccessful login with invalid credentials
     Given I am on the login page
     When I enter an invalid username and password

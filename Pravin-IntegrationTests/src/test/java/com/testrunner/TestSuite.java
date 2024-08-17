@@ -1,6 +1,8 @@
-package com.testRunner;
+package com.testrunner;
 
 import org.testng.annotations.Test;
+
+
 
 public class TestSuite {
 

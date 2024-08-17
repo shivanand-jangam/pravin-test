@@ -3,6 +3,7 @@ Feature: Test
   Background: 
     Given I am on the login page
 
+@Test258
   Scenario: Successful login with valid credentials
     When I enter a valid username as "pravin.admin"
     And I enter a valid password "Pravin@963"
